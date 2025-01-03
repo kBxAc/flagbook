@@ -1,12 +1,13 @@
 "use client";
 
 import { createContext, useContext, useState, useEffect } from "react";
+import { RefetchData } from "@/utils";
 
 const DataContext = createContext();
 
 
 export default function DataProvider ({ children }) {
-    const [data, setData] = useState(localStorage.getItem("data") ? JSON.parse(localStorage.getItem("data")) : null);
+    const [data, setData] = useState(null);
 
     useEffect(() => {
         try {
@@ -18,7 +19,7 @@ export default function DataProvider ({ children }) {
                 setData(tmp);
             }
         } catch (error) {
-            console.alert(error.message);
+            console.info(error.message);
             console.log("fetching data from server");
             fetch("/api/fetchTree")
                 .then(res => res.json())

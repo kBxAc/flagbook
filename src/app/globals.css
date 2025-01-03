@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* Prevent global scroll */
+}
+
 :root {
   --background: #171717;
   --foreground: #ffffff;
@@ -34,4 +40,32 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  overflow: auto;
+  height: 100vh;
+}
+
+.content {
+  position: relative;
+  background-image: url(kBxAc.jpeg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  inset: 7%;
+  backdrop-filter: blur(5px);
+  border: 1px solid white;
+  -webkit-mask: linear-gradient(90deg, transparent, rgb(151, 110, 110) 50%);
+  z-index: 0;
+}
+
+.content > * {
+  position: relative;
+  z-index: 1;
 }

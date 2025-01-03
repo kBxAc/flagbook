@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { ReloadButton } from "@/components";
 import { DataContext } from "@/context";
 
-export default function RecentCTFs() {
+export default function RecentCTFs({className}) {
 
     const { data } = useContext(DataContext);
 
@@ -19,14 +19,16 @@ export default function RecentCTFs() {
     })
     
     return (
-        <>
-            <div className="grid p-1 grid-cols-2 justify-items-stretch bg-[#272727]">
-                <h2 className="justify-self-start">Recent CTFs</h2>
-                <ReloadButton/>
+        <div className={`ctfs ${className}`}>
+            <div className="relative">
+                <div className="grid p-1 grid-cols-2 justify-items-stretch bg-[#272727]">
+                    <h2 className="justify-self-start">Recent CTFs</h2>
+                    <ReloadButton/>
+                </div>
+                <div className="px-2 py-4 space-y-2">
+                    {ctfs}
+                </div>
             </div>
-            <div className="ctfs flex-1 px-2 py-4 space-y-2">
-                {ctfs}
-            </div>
-        </>
+        </div>
     )
 }
