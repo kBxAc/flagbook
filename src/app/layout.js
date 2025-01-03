@@ -1,4 +1,6 @@
 import "./globals.css";
+import { Navbar, Footer } from "@/components";
+import { DataProvider } from "@/context";
 
 export const metadata = {
   title: "flagbook",
@@ -10,8 +12,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
         className="spline-sans-400"
-      >
-        {children}
+      >   
+        <DataProvider>
+          <div className="flex flex-col min-h-screen">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
+        </DataProvider>
       </body>
     </html>
   );
