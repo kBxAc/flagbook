@@ -3,4 +3,31 @@
     --navbar-inner-bg: #111;
     --navbar-text: var(--royal-blue);
     --navbar-border: var(--navbar-text);
+
+    --navbar-link-color: var(--navbar-text);
+    --navbar-link-hover: var(--golden);
+    --navbar-link-shadow: rgb(167, 153, 34);
 }
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-link {
+    flex-grow: 1;
+}
+
+.navbar-link {
+    color: var(--navbar-link-color);
+    text-decoration: none;
+    
+    transition: color 0.5s ease;
+    transition: text-shadow 0.5s ease;
+}
+
+.navbar-link:hover {
+    color: var(--navbar-link-hover);
+    text-shadow: 0 0 10px var(--navbar-link-shadow), 0 0 20px var(--navbar-link-shadow), 0 0 30px var(--navbar-link-shadow);
+}
+
