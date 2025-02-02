@@ -1,11 +1,8 @@
-import "./app.css";
+'use server'
+
+import { permanentRedirect } from 'next/navigation'
 
 
-export default function Home() {
-
-    return (
-        <div className="main">
-            <h1>Home Page</h1>
-        </div>
-    );
+export default async function App() {
+    permanentRedirect(`/home`);
 }
