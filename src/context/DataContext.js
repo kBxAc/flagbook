@@ -1,7 +1,7 @@
 "use client";
 
 import { createContext, useContext, useState, useEffect } from "react";
-import { RefetchData } from "@/utils";
+// import { RefetchData } from "@/utils";
 
 const DataContext = createContext();
 

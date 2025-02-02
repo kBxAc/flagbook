@@ -1,0 +1,6 @@
+:root {
+    --navbar-outer-bg: var(--background);
+    --navbar-inner-bg: #111;
+    --navbar-text: var(--royal-blue);
+    --navbar-border: var(--navbar-text);
+}

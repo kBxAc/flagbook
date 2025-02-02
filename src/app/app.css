@@ -1,0 +1,40 @@
+:root {
+  /* Basic */
+  --background: #000;
+  --foreground: #ffffff;
+
+  /* Colors */
+  --golden: #ff9900;
+  --aqua: #00FFFF;
+  --lightblue: #CCCCFF;
+  --royal-blue: #4169E1;
+
+  /* Footer */
+  --footer-bg: var(--background);
+  --footer-text: var(--aqua);
+
+  /* Main Content */
+  --main-margin: 1em;
+  --main-text: var(--lightblue);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+
+  color: var(--foreground);
+  background: var(--background);
+
+  font-family: var(--font-lemon-milk)
+}
+
+.main {
+  color: var(--main-text);
+  background: var(--background);
+
+  /* Make the flex fit the remaining screen */
+  flex: 1;
+
+  margin: var(--main-margin);
+}

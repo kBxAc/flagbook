@@ -1,0 +1,8 @@
+:root {
+    --font-lemon-milk: LemonMilk;
+}
+
+@font-face {
+    font-family: LemonMilk;
+    src: url("../../public/fonts/lemon_milk/LEMONMILK-Regular.otf") format("opentype");
+}
