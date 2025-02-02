@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    /* Basic */
+    --background: #000;
+    --foreground: #ffffff;
+  
+    /* Colors */
+    --golden: #ff9900;
+    --aqua: #00FFFF;
+    --lightblue: #CCCCFF;
+    --royal-blue: #4169E1;
+    
+  
+    /* Main Content */
+    --main-margin: 1em;
+    --main-text: var(--lightblue);
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  
+    color: var(--foreground);
+    background: var(--background);
+  
+    font-family: var(--font-lemon-milk)
+  }

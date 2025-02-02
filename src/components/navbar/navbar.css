@@ -68,7 +68,7 @@
 
 /* When open */
 .navbar-mobile-menu.open {
-    max-height: 300px; /* Adjust as needed */
+    max-height: 300px;
     opacity: 1;
 }
 

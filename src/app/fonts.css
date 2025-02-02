@@ -1,8 +1,14 @@
 :root {
     --font-lemon-milk: LemonMilk;
+    --font-exo2: Exo2;
 }
 
 @font-face {
     font-family: LemonMilk;
     src: url("../../public/fonts/lemon_milk/LEMONMILK-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Exo2;
+    src: url("../../public/fonts/exo2/Exo2-Regular.otf") format("opentype");
 }

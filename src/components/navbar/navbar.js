@@ -3,13 +3,13 @@
 import "./navbar.css";
 
 import Link from "next/link";
-import { FaBurger } from "react-icons/fa6";
+import { FaBookSkull } from "react-icons/fa6";
 import { useState } from "react";
 
 export default function Navbar() {
 
     const [isOpen, setIsOpen] = useState(false);
-    
+
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     }
@@ -40,14 +40,14 @@ function Desktop() {
     )
 }
 
-function Mobile({onClick}) {
+function Mobile({ onClick }) {
     return (
         <div className="navbar-mobile">
             <div className="main-link">
                 <Link href="/">flagbook</Link>
             </div>
             <div className="navbar-mobile-button" onClick={onClick}>
-                <FaBurger />
+                <FaBookSkull />
             </div>
         </div>
     )
@@ -56,11 +56,11 @@ function Mobile({onClick}) {
 function MobileMenu({ isOpen }) {
     return (
         <div className={`navbar-mobile-menu ${isOpen ? "open" : ""}`}>
-            <Link href="/home" className="navbar-link">home</Link>
-            <Link href="/ctf" className="navbar-link">ctfs</Link>
-            <Link href="/writeups" className="navbar-link">writeups</Link>
-            <Link href="/tools" className="navbar-link">tools</Link>
-            <Link href="/about" className="navbar-link">about</Link>
+            <Link href="/home" className="navbar-mobile-link">home</Link>
+            <Link href="/ctf" className="navbar-mobile-link">ctfs</Link>
+            <Link href="/writeups" className="navbar-mobile-link">writeups</Link>
+            <Link href="/tools" className="navbar-mobile-link">tools</Link>
+            <Link href="/about" className="navbar-mobile-link">about</Link>
         </div>
     );
 }

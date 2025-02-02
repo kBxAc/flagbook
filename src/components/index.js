@@ -1,5 +1,5 @@
 import Navbar from "./navbar/navbar";
-import Footer from "./footer";
+import Footer from "./footer/footer";
 
 import RecentCTFs from "./recentCTFs";
 import RecentWriteups from "./recentWriteups";
