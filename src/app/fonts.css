@@ -1,6 +1,8 @@
 :root {
     --font-lemon-milk: LemonMilk;
     --font-exo2: Exo2;
+    --font-blending: Blending;
+    --font-felice-mono: FeliceMono;
 }
 
 @font-face {
@@ -11,4 +13,14 @@
 @font-face {
     font-family: Exo2;
     src: url("../../public/fonts/exo2/Exo2-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Blending;
+    src: url("../../public/fonts/blending/Blending-regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: FeliceMono;
+    src: url("../../public/fonts/felice_mono/FeliceMonoRegular.otf") format("opentype");
 }

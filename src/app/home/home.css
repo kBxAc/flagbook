@@ -1,40 +1,47 @@
 :root {
-    /* Basic */
-    --background: #000;
-    --foreground: #ffffff;
-  
-    /* Colors */
-    --golden: #ff9900;
-    --aqua: #00FFFF;
-    --lightblue: #CCCCFF;
-    --royal-blue: #4169E1;
-  
-    /* Footer */
-    --footer-bg: var(--background);
-    --footer-text: var(--aqua);
-  
-    /* Main Content */
-    --main-margin: 1em;
-    --main-text: var(--lightblue);
+  --home-margin: 1em;
+  --home-text-color: var(--lightblue);
+  --home-font: var(--font-exo2);
+  --home-font-size: 1.5em;
+}
+
+.font-lemon-milk {
+  font-family: var(--font-lemon-milk);
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+
+  color: var(--foreground);
+  background: var(--background);
+
+  font-family: var(--font-lemon-milk)
+}
+
+.home {
+  flex: 1;
+
+  color: var(--home-text-color);
+  background: var(--background);
+
+  font-family: var(--home-font);
+  font-size: var(--home-font-size);
+
+  margin: var(--home-margin);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 860px) {
+  .desktop {
+    display: none;
   }
-  
-  html,
-  body {
-    height: 100%;
-    width: 100%;
-  
-    color: var(--foreground);
-    background: var(--background);
-  
-    font-family: var(--font-lemon-milk)
+}
+
+@media (min-width: 860px) {
+  .mobile {
+    display: none;
   }
-  
-  .main {
-    color: var(--main-text);
-    background: var(--background);
-  
-    /* Make the flex fit the remaining screen */
-    flex: 1;
-  
-    margin: var(--main-margin);
-  }
+}

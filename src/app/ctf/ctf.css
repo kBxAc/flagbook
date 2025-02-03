@@ -1,0 +1,14 @@
+:root {
+    --ctf-font: var(--font-exo2);
+    --ctf-font-size: 1.5em;
+}
+
+.ctf {
+    flex: 1;
+
+    color: var(--foreground);
+    background: var(--background);
+
+    font-family: var(--ctf-font);
+    font-size: var(--ctf-font-size);
+}

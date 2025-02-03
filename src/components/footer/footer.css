@@ -2,9 +2,10 @@
     /* Footer */
     --footer-bg: var(--background);
     --footer-text: var(--aqua);
-    --footer-font: var(--font-exo2);
+    --footer-font: var(--font-felice-mono);
 }
 
 .footer {
     font-family: var(--footer-font);
+    font-weight: 900;
 }
