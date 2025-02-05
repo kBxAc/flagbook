@@ -1,0 +1,14 @@
+:root {
+    --about-font: var(--font-exo2);
+    --about-font-size: 1.5em;
+}
+
+.about {
+    flex: 1;
+
+    color: var(--foreground);
+    background: var(--background);
+
+    font-family: var(--about-font);
+    font-size: var(--about-font-size);
+}

@@ -1,0 +1,14 @@
+:root {
+    --tools-font: var(--font-exo2);
+    --tools-font-size: 1.5em;
+}
+
+.tools {
+    flex: 1;
+
+    color: var(--foreground);
+    background: var(--background);
+
+    font-family: var(--tools-font);
+    font-size: var(--tools-font-size);
+}

@@ -1,0 +1,14 @@
+:root {
+    --writeup-font: var(--font-exo2);
+    --writeup-font-size: 1.5em;
+}
+
+.writeup {
+    flex: 1;
+
+    color: var(--foreground);
+    background: var(--background);
+
+    font-family: var(--writeup-font);
+    font-size: var(--writeup-font-size);
+}
