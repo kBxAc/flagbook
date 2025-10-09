@@ -12,6 +12,7 @@ tags:
   - Forensics
   - picoCTF
   - DISKO 1
+description: Writeup for PicoCTF DISKO 1 challenge
 ---
 # DISKO 1
 
