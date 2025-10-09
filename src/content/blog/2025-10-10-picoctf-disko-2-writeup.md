@@ -7,6 +7,10 @@ ogImage: picoCTF - DISKO 2 Writeup
 slug: picoctf-disko-2
 featured: false
 draft: false
+tags:
+  - writeup
+  - Forensics
+  - picoCTF
 description: Writeup for PicoCTF DISKO 2 challenge
 ---
 # DISKO 2
@@ -29,7 +33,7 @@ We can see there is a disk image (.dd) file given. Also there is a hint given
 
 > Hint : How can you extract/isolate a partition?
 
-So we’ll mount the .dd file in `Autopsy Tool` . If you are wondering what is Autopsy you can find it here \[[https://www.kali.org/tools/autopsy/\](https://www.kali.org/tools/autopsy/)](https://www.kali.org/tools/autopsy/]\(https://www.kali.org/tools/autopsy/\)).
+So we’ll mount the .dd file in `Autopsy Tool` . If you are wondering what is Autopsy you can find it here \[[https://www.kali.org/tools/autopsy/\](https://www.kali.org/tools/autopsy/)](https://www.kali.org/tools/autopsy/%5D\(https://www.kali.org/tools/autopsy/\)).
 
 Create a new case and mount the image
 
