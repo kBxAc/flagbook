@@ -7,6 +7,10 @@ ogImage: picoCTF - RED Writeup
 slug: picoctf-RED
 featured: false
 draft: false
+tags:
+  - writeup
+  - Forensics
+  - picoCTF
 description: Writeup for PicoCTF RED challenge
 ---
 ### Welcome back to the write-up series of picoCTF. Today we’ll see about the `RED` Challenge in Forensics Category
