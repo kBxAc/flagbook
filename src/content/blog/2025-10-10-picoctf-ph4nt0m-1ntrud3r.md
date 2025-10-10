@@ -7,6 +7,10 @@ ogImage: picoCTF - Ph4nt0m 1ntrud3r
 slug: picoctf-Ph4nt0m-1ntrud3r
 featured: false
 draft: false
+tags:
+  - writeup
+  - Forensics
+  - picoCTF
 description: Writeup for PicoCTF Ph4nt0m 1ntrud3r challenge
 ---
 ### Welcome back to the write-up series of picoCTF. Today we’ll see about the `Ph4nt0m 1ntrud3r` Challenge in Forensics Category
