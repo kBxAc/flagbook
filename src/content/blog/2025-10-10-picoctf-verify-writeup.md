@@ -7,6 +7,10 @@ ogImage: " picoCTF - Verify Writeup"
 slug: " picoctf- Verify-Writeup"
 featured: false
 draft: false
+tags:
+  - writeup
+  - Forensics
+  - picoCTF
 description: Writeup for PicoCTF Verify challenge
 ---
 ### Welcome back to the write-up series of picoCTF. Today we’ll see about the `Verify` Challenge in Forensics Category
